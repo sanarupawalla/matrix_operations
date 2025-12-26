@@ -49,16 +49,12 @@ st.markdown(
             padding-left: 5rem;
             padding-right: 5rem;
         }
-    </style>""", unsafe_allow_html=True)
-
-st.markdown(
-    """
-    <style>
-    section[data-testid="stSidebar"] {
-        width: 300px !important;  # Set the width to your desired value (e.g., 400px)
-    }
+    
+        section[data-testid="stSidebar"] {
+            width: 300px !important;  # Set the width to your desired value (e.g., 400px)
+        }
     </style>
-    """, unsafe_allow_html=True,)
+    """, unsafe_allow_html=True)
 
 st.sidebar.subheader("Choose the matrix operation")
 operation = st.sidebar.selectbox("Operation", ("Do Multiplication", "Solve algebraic expressions", "Find Eigen values and vector"))
